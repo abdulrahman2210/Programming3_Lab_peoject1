@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View.LoginPage;
+package Controler;
 
 import View.SystemPage.Prog3_SystemPage;
 import java.io.IOException;
@@ -24,7 +24,7 @@ import javafx.stage.Stage;
  *
  * @author Administrator
  */
-public class FXMLController implements Initializable {
+public class FXMLControllerLogin implements Initializable {
 
     @FXML
     private ImageView imageView;
@@ -51,14 +51,12 @@ public class FXMLController implements Initializable {
 
     @FXML
     private void handleButtonAction(ActionEvent event) throws IOException {
-        if(event.getSource() == buttonLogin){
             if(textFieldUserName.getText().equals("user") && passwordField.getText().equals("userpass")){
                 labelErorr.setText("");
                 new Prog3_SystemPage().show();
             }else{
                 labelErorr.setText("User Name OR Password Invalid!");
             }  
-        }
     }
     
 }

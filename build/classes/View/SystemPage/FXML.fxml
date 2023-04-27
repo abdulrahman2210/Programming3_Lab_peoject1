@@ -7,8 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="View.SystemPage.FXMLController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.FXMLControllerSystemPage">
    <children>
       <Button fx:id="buttonLogOut" layoutX="470.0" layoutY="64.0" mnemonicParsing="false" onAction="#buttonLogOutAction" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: #ffc107; -fx-text-fill: white;" text="Log out">
          <font>
@@ -42,5 +41,10 @@
       </Label>
       <TextField fx:id="textFieldUsd" layoutX="121.0" layoutY="276.0" prefHeight="37.0" prefWidth="145.0" />
       <TextField fx:id="textFieldNis" layoutX="339.0" layoutY="276.0" prefHeight="37.0" prefWidth="145.0" />
+      <Label fx:id="labelInvalid" layoutX="242.0" layoutY="353.0" prefHeight="27.0" prefWidth="116.0" textFill="#ff0101">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
