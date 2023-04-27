@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.LoginPage.FXMLController">
+ 
+   <children>
+       <ImageView fitHeight="329.0" fitWidth="359.0" layoutX="71.0" layoutY="7.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Images/Screenshot%202023-04-25%20233027.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageView" fitHeight="291.0" fitWidth="292.0" layoutX="105.0" layoutY="8.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../../Users/Administrator/NetBeans_Project_2023/Programming_3_Lab/src/programming_3_lab/Screenshot%202023-04-25%20233027.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="userName" layoutX="198.0" layoutY="299.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <TextField fx:id="textFieldUserName" layoutX="146.0" layoutY="347.0" prefHeight="37.0" prefWidth="209.0" style="-fx-border-color: blue; -fx-border-width: 2;" />
+      <Label fx:id="password" layoutX="205.0" layoutY="410.0" text="Password">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <PasswordField fx:id="passwordField" layoutX="146.0" layoutY="449.0" prefHeight="37.0" prefWidth="209.0" style="-fx-border-color: blue; -fx-border-width: 2;" />
+      <Button fx:id="buttonLogin" layoutX="210.0" layoutY="559.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="82.0" style="-fx-background-color: blue; -fx-text-fill: white;" text="Login">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <Label fx:id="labelErorr" layoutX="131.0" layoutY="505.0" prefHeight="37.0" prefWidth="241.0" textAlignment="CENTER" textFill="RED">
+      </Label>
+   </children>
+</AnchorPane>
